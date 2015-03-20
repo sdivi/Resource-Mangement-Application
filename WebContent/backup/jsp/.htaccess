@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule   ^Login.jsp   Xu8JuefAtua.jsp
+

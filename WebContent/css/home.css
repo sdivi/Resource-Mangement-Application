@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+ul li{
+	float:left;
+	width:150px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background:blue;
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+}
+ul li li{
+	background:skyblue;
+	color:#FFF;
+	display:none;
+}
+ul li li a{
+	text-decoration:none;
+	color:white;
+}
+ul li li:hover{
+	background:grey;
+}

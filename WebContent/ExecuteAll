@@ -1,0 +1,24 @@
+create table employee( emp_id integer, emp_name varchar, email_id varchar, doj date, tech varchar,role_id varchar, domain_id varchar, last_unallocated date default current_date,status varchar default 'Available',p_id integer default 1008421,req_date date default current_date, no_of_req integer default 0, location_id varchar,primary key (emp_id));
+create table login(emp_id integer, password varchar,role varchar,primary key (emp_id));
+create table project(p_id integer,p_name varchar,domain_id varchar,tech varchar,location_id varchar,branch_id varchar,pm_id integer default 111111,primary key (p_id));
+create table requirement(p_id integer,role1 integer default 0,role2 integer default 0,role3 integer default 0,role4 integer default 0,role5 integer default 0,role6 integer default 0,role7 integer default 0,role8 integer,role9 integer default 0,role10 integer default 0,pm_id integer,primary key (p_id));
+create table request(req_id integer,emp_id integer,p_id integer,req_date date,primary key (req_id));
+
+insert into login values('111111','t_R','pm');
+insert into login values('222222','w\Q','rmg');
+insert into login values('999999','t_R','admin');
+
+insert into employee values( 111111, 'Project Manager' , 'pro_manager@tcs.com', '2005-09-07', 'JAVA','Project Manager', 'Resource Allocation', '2005-09-07','Allocated',1008421,'2005-09-07', 0, 'Hyderabad');
+insert into employee values( 222222, 'Sirisha Patro' , 'sirisha_patro@tcs.com', '2005-09-07', 'JAVA','Resource Manager', 'Resource Allocation', '2005-09-07','Allocated',1008421,'2005-09-07', 0, 'Hyderabad');
+insert into employee values( 999999, 'Chandra ' , 'n_chandra@tcs.com', '2005-09-07', 'JAVA','Admin', 'Resource Allocation', '2005-09-07','Allocated',1008421,'2005-09-07', 0, 'Hyderabad');
+
+*********************************
+update these in table
+
+update table project add pm_id integer;
+update table project set pm_id=111111;
+
+update table requirement add pm_id integer;
+update table requirement set pm_id=111111;
+
+*********************************

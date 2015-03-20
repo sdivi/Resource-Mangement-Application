@@ -1,0 +1,8 @@
+
+drop table employee;
+
+drop table project;
+drop table requirement;
+
+drop table login;
+drop table request;

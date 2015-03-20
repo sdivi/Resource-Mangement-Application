@@ -1,0 +1,3 @@
+drop sequence project_id;
+drop sequence emp_id;
+drop sequence request;
